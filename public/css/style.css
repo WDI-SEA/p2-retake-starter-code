@@ -1,0 +1,31 @@
+#Scientific{
+    font-style: italic;
+}
+
+#Extinct{
+ color: red;
+}
+
+.nav {
+    background-color: rebeccapurple;
+    overflow: hidden;
+  }
+  
+  .nav a {
+    float: left;
+    color: white    ;
+    text-align: center;
+    padding: 15px 14px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav a:hover {
+    background-color: plum;
+    color: black;
+  }
+  
+  .nav a.active {
+    background-color: black;
+    color: white;
+  }

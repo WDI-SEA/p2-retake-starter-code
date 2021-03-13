@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/style.css">
+
+
+<h1>Favorites Page</h1>
+<div class="nav">
+    <a class="active" href="/">Home</a>
+    <a href="/favorites/new">New</a>
+    <a href="/favorites">Favorites</a>
+</div>
+<% if (animals.length === 0) { %> 
+<h1>No Animals</h1>
+    <% }else { %>
+<% animals.forEach(animal => { %>
+    <% if(animal.extinct === true) { %>
+<h1 style="color:red"><%= animal.species_name %></h1>
+
+   <% }else {%>
+    <h1><%= animal.species_name %></h1>
+
+  <% } %> 
+<h1><em><%= animal.scientific_name %></em></h1>
+<img src='<%= animal.image_url%> ' width="300px" height="300px">
+<h1><%= animal.description%></h1>
+
+
+
+<% }) %> 
+<% } %> 
